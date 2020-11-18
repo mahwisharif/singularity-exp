@@ -9,6 +9,7 @@ MirrorURL:  http://us.archive.ubuntu.com/ubuntu/
     cd example
     touch example.cpp
 %post
+    echo "going to set up and install"
     apt-get install -y software-properties-common
     add-apt-repository universe
     apt-get update
