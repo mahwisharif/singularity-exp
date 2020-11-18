@@ -3,13 +3,13 @@ OSVersion: trusty
 MirrorURL:  http://us.archive.ubuntu.com/ubuntu/
 
 %runscript
+    echo "going to set up and install - please wait"
     echo "This is what happens when you run the container..."
     lsb_release -a
     mkdir example
     cd example
     touch example.cpp
 %post
-    echo "going to set up and install - please wait"
     apt-get install -y software-properties-common
     add-apt-repository universe
     apt-get update
